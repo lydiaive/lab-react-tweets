@@ -51,3 +51,13 @@ function App() {
 }
 
 export default App;
+
+
+
+/* ??
+{tweetsArray.forEach(el => {
+  <Tweet 
+        tweet={ el }
+      />
+}
+)} */
