@@ -1,6 +1,6 @@
 function User(props) {
 
-    const {name, handle} = props
+    const {name, handle} = props.userData
     
     return (
         <span className="user">

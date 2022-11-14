@@ -6,23 +6,23 @@ import User from "./User";
 
 function Tweet(props) {
 
+
   return (
     <div className="tweet">
       <ProfileImage
-        image={props.image}
+        image={props.tweet.user.image}
       />
       <div className="body">
         <div className="top">
           <User
-            name={props.name}
-            handle={props.handle}
+            userData={props.tweet.user} 
           />
           <Timestamp
-            timestamp={props.timestamp}
+            timestamp={props.tweet.timestamp}
           />
         </div>
         <Message
-          message={props.message}
+          message={props.tweet.message}
         />
         <Actions/>
       </div>
